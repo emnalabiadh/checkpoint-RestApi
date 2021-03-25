@@ -11,7 +11,11 @@ const Home = () => {
       <Link to="/Add">
         <button onClick={() => dispatch(toggleAdd())}>Add Contact</button>
       </Link>
-      <button>ContactList</button>
+
+      <Link to="/contacts">
+        <button>ContactList</button>
+      </Link>
+
       <ContactList />
     </div>
   );

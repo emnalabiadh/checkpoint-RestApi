@@ -1,7 +1,7 @@
 import { TOGGLE_ADD, TOGGLE_EDIT } from "../actionTypes/edit";
 
 const initialState = {
-  edit,
+  edit: false,
 };
 
 const editReducer = (state = initialState, { type }) => {

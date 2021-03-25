@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { editContact, postContact } from "../JS/actions/contact";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,9 @@ const Add = () => {
   const edit = useSelector((state) => state.editReducer.edit);
 
   const contactToEdit = useSelector((state) => state.contactReducer.contact);
+
+  const dispatch = useDispatch();
+
   useEffect(() => {
     edit
       ? setContact(contactToEdit)
